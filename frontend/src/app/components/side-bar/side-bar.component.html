@@ -1,0 +1,46 @@
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarStatus">
+  <div class="sidebar-content">
+    <div class="sidebar-head">
+      <div class="sidebar-head__logo">
+        <img src="assets/images/union-logo.png" alt="Union Logo">
+        <h2>Ringku</h2>
+      </div>
+      <div class="sidebar-head__toggle">
+        <input
+          type="checkbox"
+          class="sidebar-toggle-button"
+          id="sidebar-toggle-button"
+          (click)="changeStatusSideBar()">
+        <label id="burger" for="sidebar-toggle-button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </div>
+    </div>
+    <div class="wrapper-sidebar-main-content">
+      <div class="sidebar-main">
+        <ul>
+          <li *ngFor="let item of items">
+            <div>
+              <img src="assets/images/message.png" alt="Icon menu item">
+              <a [routerLink]="item.route">{{ item.name }}</a>
+            </div>
+            <span class="sidebar-main__unread-counter" *ngIf="item.unread && unreadTransactionsCount > 0 && sidebarStatus">{{unreadTransactionsCount}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer__setting-block">
+          <img src="assets/images/setting.png" alt="Setting">
+          <a href="#">Setting</a>
+        </div>
+        <hr [ngClass]="{'disable-divider': !sidebarStatus}" class="divider">
+        <div class="sidebar-footer__user-block">
+          <img src="assets/images/avatar.png" alt="Avatar">
+          <span>Alex Grishe</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

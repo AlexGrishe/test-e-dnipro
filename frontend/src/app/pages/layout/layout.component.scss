@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  //header {
+  //  background-color: #333;
+  //  color: #fff;
+  //  padding: 10px;
+  //}
+
+  .main-content {
+    flex: 1;
+    display: flex;
+
+    .sidebar {
+      width: 306px;
+      transition: ease-in-out 600ms;
+    }
+
+    .sidebarClose {
+      transition: ease-in-out 300ms;
+      width: 74px;
+    }
+
+    .main-content-area {
+      flex: 1;
+    }
+  }
+}
+
+

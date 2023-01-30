@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="header">
+        <h2>My Wallet</h2>
+        <span>Keep track your financial plan</span>
+    </div>
+    <div class="main">
+        <div class="information-and-action-block">
+            <div class="information-and-action-block__information-block">
+                <div class="information-block__user-name">
+                    <p><span>👋</span>Hi {{user.name}}!</p>
+                    <button>
+                        <img src="assets/images/three-btn.png" alt="Setting">
+                    </button>
+                </div>
+                <div class="information-block__balance">
+                    <p>{{user.balance | currency:'$':'symbol-narrow':'1.0'}}</p>
+                </div>
+            </div>
+            <div class="information-and-action-block__action-block">
+                <button>
+                    <img src="assets/images/money-send-icon.png" alt="Send Payment">Send a payment
+                </button>
+                <hr>
+                <button>
+                    <img src="assets/images/money-reques-icon.png" alt="Request Payment">Request a payment
+                </button>
+            </div>
+        </div>
+        <div class="wallet-cards">
+            <div class="wallet-cards__card-block" *ngFor="let card of walletCards">
+                <div class="card-block-header">
+                    <p class="card-block__logo"><img *ngIf="card.img" src="{{card.img}}" alt="{{card.name}}">{{card.name}}</p>
+                    <span *ngIf="card.date" class="card-block__date">Last Paid on {{card.date}}</span>
+                </div>
+                <div class="card-block-progress-bar">
+                    <p>
+                        <span>{{card.collected | currency:'$':'symbol-narrow':'1.0'}}</span>
+                        <span> / {{card.goal | currency:'$':'symbol-narrow':'1.0'}}</span>
+                        <span>{{+card.collected / +card.goal * 100 | number : '1.2-2'}}%</span>
+                    </p>
+                    <mat-progress-bar mode="determinate"
+                                      value="{{+card.collected / +card.goal * 100}}"></mat-progress-bar>
+                </div>
+            </div>
+        </div>
+        <div class="create-new-wallet-block">
+            <button (click)="openCreateNewWalletDialog()">
+                <span>+</span>
+                Crate New Wallet
+            </button>
+        </div>
+<!--        <span style="width: 100px; height: 50px; background: #4F46E5; color:#000;" *ngIf="data">-->
+        <!--        You card: <i>{{data.name}}</i> <i>{{data.goal}}</i>-->
+        <!--      </span>-->
+    </div>
+</div>

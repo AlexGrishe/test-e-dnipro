@@ -1,0 +1,113 @@
+{
+  "configVersion": 1,
+  "timestamp": 1675069409245,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.9228382fed29fcff.js",
+        "/manifest.webmanifest",
+        "/polyfills.19f582be6ce74297.js",
+        "/runtime.bcd0eb07f121615c.js",
+        "/styles.3ca555e8aa8a3e56.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/Icon 2.png",
+        "/assets/images/Icon 3.png",
+        "/assets/images/Icon.png",
+        "/assets/images/avatar.png",
+        "/assets/images/donation.png",
+        "/assets/images/education-icon.png",
+        "/assets/images/emergency-icon.png",
+        "/assets/images/foods-and-groceries.png",
+        "/assets/images/message.png",
+        "/assets/images/money-reques-icon.png",
+        "/assets/images/money-send-icon.png",
+        "/assets/images/repair-vehicle.png",
+        "/assets/images/setting.png",
+        "/assets/images/three-btn.png",
+        "/assets/images/travel-icon.png",
+        "/assets/images/union-logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/Icon 2.png": "8c61769629b6661a3cc64b55abd7ef043f2f2f89",
+    "/assets/images/Icon 3.png": "41ce7e070902c699fd7d11430e9ba26ff431762a",
+    "/assets/images/Icon.png": "b2535ad2e9b4d7b0bc98204435ed0af0da8c1a6c",
+    "/assets/images/avatar.png": "288838b9b89b3fbdebcdaf66f574e49c909b78a5",
+    "/assets/images/donation.png": "aa0f4cd27b35c365b326a5d2e7da1ce88219ac2a",
+    "/assets/images/education-icon.png": "b7bd6fc6caa62d443aab5a481dc60623609d4fa0",
+    "/assets/images/emergency-icon.png": "1a511d3d4484f5aefc0506161c6af8aa42c3eaab",
+    "/assets/images/foods-and-groceries.png": "0624176abafe20115ace3f34803931664ac00e8b",
+    "/assets/images/message.png": "0c5e17262e69b21afc5d055c4cb911f61af7f1c1",
+    "/assets/images/money-reques-icon.png": "f824421fdbb28d637152a40c42b8c59378c109cb",
+    "/assets/images/money-send-icon.png": "61a738af4a5a3b722fd7e42f7926c463626ec6b8",
+    "/assets/images/repair-vehicle.png": "89c97d837d0f1e85a97be13af13c6e55a3e8ec91",
+    "/assets/images/setting.png": "a552b2aedbfb2df976aaf561a676836fdd9ef84f",
+    "/assets/images/three-btn.png": "c5c6e818b8289af07306523a8d9be68441b0c781",
+    "/assets/images/travel-icon.png": "3105025918809f8cf53b33801905305469e353c9",
+    "/assets/images/union-logo.png": "5ea2d1044eb7407ec5260eb5c704d3a1bc2950df",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "60381fcf1a1b824e22b1ae740897133153cffc06",
+    "/main.9228382fed29fcff.js": "6afefcbc9f2ecbb1f2e40849359d1edceada07bc",
+    "/manifest.webmanifest": "0e3357d803dc21f4b36520fd3758961c5386532c",
+    "/polyfills.19f582be6ce74297.js": "d46602f3b7c95982c1b734dbb55546698e89f6ca",
+    "/runtime.bcd0eb07f121615c.js": "26edf03825e73c92a8864c03adfe9a44603b768c",
+    "/styles.3ca555e8aa8a3e56.css": "74fbfaeb2d95d5c54dfac64d80546e5b4b59fc51"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

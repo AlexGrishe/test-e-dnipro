@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>{{user.name}} what's your next wallet?</h1>
+<div mat-dialog-content>
+<!--    <p>What's your next wallet?</p>-->
+    <div class="wrapper-modal-form">
+        <mat-form-field appearance="fill">
+            <mat-label>Name Wallet?</mat-label>
+            <input matInput [(ngModel)]="data.name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Goal Wallet?</mat-label>
+            <input matInput [(ngModel)]="data.goal">
+        </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

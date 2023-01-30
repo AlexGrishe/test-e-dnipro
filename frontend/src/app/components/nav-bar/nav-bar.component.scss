@@ -1,0 +1,40 @@
+.navbar-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 48px;
+  gap: 664px;
+  height: 104px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  .navbar-block__start-items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 88px;
+    height: 32px;
+  }
+
+  button {
+    border: none;
+    background: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+
+    img {
+      width: 22.4px;
+      height: 22.4px;
+    }
+  }
+}
